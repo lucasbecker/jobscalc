@@ -7,7 +7,7 @@ module.exports = {
   
     const timeDiffInMs = dueDate - Date.now();
     const daysInMs = 1000 * 60 * 60 * 24;
-    const dayDiff = Math.floor(timeDiffInMs / daysInMs);
+    const dayDiff = Math.ceil(timeDiffInMs / daysInMs);
   
     return dayDiff;
   },
